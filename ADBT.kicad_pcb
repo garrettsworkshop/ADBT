@@ -2,14 +2,14 @@
 
   (general
     (thickness 1.6)
-    (drawings 0)
+    (drawings 16)
     (tracks 0)
     (zones 0)
     (modules 0)
     (nets 1)
   )
 
-  (page A4)
+  (page USLetter)
   (layers
     (0 F.Cu signal)
     (1 In1.Cu signal)
@@ -119,5 +119,22 @@
     (uvia_dia 0.3)
     (uvia_drill 0.1)
   )
+
+  (gr_line (start 104.3432 73.4822) (end 104.3432 114.046) (layer Edge.Cuts) (width 0.15) (tstamp 601B7277))
+  (gr_line (start 112.2934 121.9962) (end 112.2934 117.4496) (layer Edge.Cuts) (width 0.15) (tstamp 601B7276))
+  (gr_arc (start 108.8898 117.4496) (end 112.2934 117.4496) (angle -90) (layer Edge.Cuts) (width 0.15) (tstamp 601B7275))
+  (gr_line (start 104.3432 114.046) (end 108.8898 114.046) (layer Edge.Cuts) (width 0.15) (tstamp 601B7274))
+  (gr_line (start 152.8572 65.532) (end 112.2934 65.532) (layer Edge.Cuts) (width 0.15) (tstamp 601B7277))
+  (gr_line (start 104.3432 73.4822) (end 108.8898 73.4822) (layer Edge.Cuts) (width 0.15) (tstamp 601B7276))
+  (gr_arc (start 108.8898 70.0786) (end 108.8898 73.4822) (angle -90) (layer Edge.Cuts) (width 0.15) (tstamp 601B7275))
+  (gr_line (start 112.2934 65.532) (end 112.2934 70.0786) (layer Edge.Cuts) (width 0.15) (tstamp 601B7274))
+  (gr_line (start 160.8074 114.046) (end 160.8074 73.4822) (layer Edge.Cuts) (width 0.15) (tstamp 601B7277))
+  (gr_line (start 152.8572 65.532) (end 152.8572 70.0786) (layer Edge.Cuts) (width 0.15) (tstamp 601B7276))
+  (gr_arc (start 156.2608 70.0786) (end 152.8572 70.0786) (angle -90) (layer Edge.Cuts) (width 0.15) (tstamp 601B7275))
+  (gr_line (start 160.8074 73.4822) (end 156.2608 73.4822) (layer Edge.Cuts) (width 0.15) (tstamp 601B7274))
+  (gr_line (start 160.8074 114.046) (end 156.2608 114.046) (layer Edge.Cuts) (width 0.15) (tstamp 601B71F7))
+  (gr_arc (start 156.2608 117.4496) (end 156.2608 114.046) (angle -90) (layer Edge.Cuts) (width 0.15))
+  (gr_line (start 152.8572 121.9962) (end 152.8572 117.4496) (layer Edge.Cuts) (width 0.15))
+  (gr_line (start 112.2934 121.9962) (end 152.8572 121.9962) (layer Edge.Cuts) (width 0.15))
 
 )
