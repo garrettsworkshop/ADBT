@@ -238,7 +238,7 @@
     (at 115.0239 111.3155)
     (solder_paste_margin -0.05)
     (attr virtual)
-    (fp_text reference REF** (at 0 0) (layer F.Fab)
+    (fp_text reference H4 (at 0 0) (layer F.Fab)
       (effects (font (size 0.8128 0.8128) (thickness 0.2032)))
     )
     (fp_text value LPSeries-Screw (at 0 0.8) (layer F.Fab) hide
@@ -287,7 +287,7 @@
     (at 150.0759 111.3155)
     (solder_paste_margin -0.05)
     (attr virtual)
-    (fp_text reference REF** (at 0 0) (layer F.Fab)
+    (fp_text reference H3 (at 0 0) (layer F.Fab)
       (effects (font (size 0.8128 0.8128) (thickness 0.2032)))
     )
     (fp_text value LPSeries-Screw (at 0 0.8) (layer F.Fab) hide
@@ -336,7 +336,7 @@
     (at 115.0239 76.2635)
     (solder_paste_margin -0.05)
     (attr virtual)
-    (fp_text reference REF** (at 0 0) (layer F.Fab)
+    (fp_text reference H1 (at 0 0) (layer F.Fab)
       (effects (font (size 0.8128 0.8128) (thickness 0.2032)))
     )
     (fp_text value LPSeries-Screw (at 0 0.8) (layer F.Fab) hide
@@ -385,7 +385,7 @@
     (at 150.0759 76.2635)
     (solder_paste_margin -0.05)
     (attr virtual)
-    (fp_text reference REF** (at 0 0) (layer F.Fab)
+    (fp_text reference H2 (at 0 0) (layer F.Fab)
       (effects (font (size 0.8128 0.8128) (thickness 0.2032)))
     )
     (fp_text value LPSeries-Screw (at 0 0.8) (layer F.Fab) hide
