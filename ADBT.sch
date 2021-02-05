@@ -2233,4 +2233,16 @@ F 3 "~" H 1850 6000 50  0001 C CNN
 	1    1850 6000
 	1    0    0    -1  
 $EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 601DCB46
+P 900 1150
+F 0 "#PWR?" H 900 900 50  0001 C CNN
+F 1 "GND" H 900 1000 50  0000 C CNN
+F 2 "" H 900 1150 50  0001 C CNN
+F 3 "" H 900 1150 50  0001 C CNN
+	1    900  1150
+	1    0    0    -1  
+$EndComp
+Connection ~ 900  1150
 $EndSCHEMATC
