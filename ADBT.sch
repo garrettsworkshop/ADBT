@@ -4,9 +4,9 @@ EELAYER END
 $Descr USLetter 11000 8500
 encoding utf-8
 Sheet 1 1
-Title "RAM2E II"
-Date "2020-07-25"
-Rev "1.0"
+Title "ADBT"
+Date "2021-02-05"
+Rev "0.5"
 Comp "Garrett's Workshop"
 Comment1 ""
 Comment2 ""
@@ -850,8 +850,8 @@ Wire Notes Line
 Text Notes 8000 1850 0    50   ~ 0
 ESP32 module
 Wire Notes Line
-	2450 5850 1100 5850
-Text Notes 1250 5800 0    50   ~ 0
+	2450 5700 1100 5700
+Text Notes 1250 5650 0    50   ~ 0
 mounting holes & fiducials
 $Comp
 L Device:C_Small C3
@@ -1057,9 +1057,9 @@ $EndComp
 Wire Notes Line
 	1100 6900 2450 6900
 Wire Notes Line
-	2450 5850 2450 6900
+	2450 5700 2450 6900
 Wire Notes Line
-	1100 5850 1100 6900
+	1100 5700 1100 6900
 Text Notes 2900 7100 0    50   ~ 0
 bypass capacitance
 Wire Notes Line
@@ -2190,47 +2190,47 @@ F 3 "~" H 1850 6250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:MountingHole H4
+L Mechanical:MountingHole_Pad H4
 U 1 1 5CC7E0C0
-P 2150 6000
-F 0 "H4" H 2250 6000 50  0000 L CNN
-F 1 " " H 2250 5960 50  0000 L CNN
-F 2 "stdpads:LPSeries-Screw" H 2150 6000 50  0001 C CNN
-F 3 "~" H 2150 6000 50  0001 C CNN
-	1    2150 6000
+P 2150 5900
+F 0 "H4" H 2250 5950 50  0000 L CNN
+F 1 " " H 2250 5860 50  0000 L CNN
+F 2 "stdpads:LPSeries-Screw" H 2150 5900 50  0001 C CNN
+F 3 "~" H 2150 5900 50  0001 C CNN
+	1    2150 5900
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:MountingHole H2
+L Mechanical:MountingHole_Pad H2
 U 1 1 5CC795A2
-P 1550 6000
-F 0 "H2" H 1650 6000 50  0000 L CNN
-F 1 " " H 1650 5960 50  0000 L CNN
-F 2 "stdpads:LPSeries-Screw" H 1550 6000 50  0001 C CNN
-F 3 "~" H 1550 6000 50  0001 C CNN
-	1    1550 6000
+P 1550 5900
+F 0 "H2" H 1650 5950 50  0000 L CNN
+F 1 " " H 1650 5860 50  0000 L CNN
+F 2 "stdpads:LPSeries-Screw" H 1550 5900 50  0001 C CNN
+F 3 "~" H 1550 5900 50  0001 C CNN
+	1    1550 5900
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:MountingHole H1
+L Mechanical:MountingHole_Pad H1
 U 1 1 5CC53461
-P 1250 6000
-F 0 "H1" H 1350 6000 50  0000 L CNN
-F 1 " " H 1350 5960 50  0000 L CNN
-F 2 "stdpads:LPSeries-Screw" H 1250 6000 50  0001 C CNN
-F 3 "~" H 1250 6000 50  0001 C CNN
-	1    1250 6000
+P 1250 5900
+F 0 "H1" H 1350 5950 50  0000 L CNN
+F 1 " " H 1350 5860 50  0000 L CNN
+F 2 "stdpads:LPSeries-Screw" H 1250 5900 50  0001 C CNN
+F 3 "~" H 1250 5900 50  0001 C CNN
+	1    1250 5900
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:MountingHole H3
+L Mechanical:MountingHole_Pad H3
 U 1 1 5CC7E0B9
-P 1850 6000
-F 0 "H3" H 1950 6000 50  0000 L CNN
-F 1 " " H 1950 5960 50  0000 L CNN
-F 2 "stdpads:LPSeries-Screw" H 1850 6000 50  0001 C CNN
-F 3 "~" H 1850 6000 50  0001 C CNN
-	1    1850 6000
+P 1850 5900
+F 0 "H3" H 1950 5950 50  0000 L CNN
+F 1 " " H 1950 5860 50  0000 L CNN
+F 2 "stdpads:LPSeries-Screw" H 1850 5900 50  0001 C CNN
+F 3 "~" H 1850 5900 50  0001 C CNN
+	1    1850 5900
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -2245,4 +2245,26 @@ F 3 "" H 900 1150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 900  1150
+Wire Wire Line
+	2150 6000 1850 6000
+Connection ~ 2150 6000
+Connection ~ 1550 6000
+Wire Wire Line
+	1550 6000 1250 6000
+Connection ~ 1850 6000
+Wire Wire Line
+	1850 6000 1550 6000
+Wire Wire Line
+	2150 6000 2250 5950
+$Comp
+L power:GND #PWR?
+U 1 1 602195C0
+P 2250 5950
+F 0 "#PWR?" H 2250 5700 50  0001 C CNN
+F 1 "GND" H 2250 5800 50  0000 C CNN
+F 2 "" H 2250 5950 50  0001 C CNN
+F 3 "" H 2250 5950 50  0001 C CNN
+	1    2250 5950
+	-1   0    0    -1  
+$EndComp
 $EndSCHEMATC
