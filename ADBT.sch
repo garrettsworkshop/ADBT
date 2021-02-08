@@ -122,12 +122,12 @@ $EndComp
 $Comp
 L Device:R_Small R4
 U 1 1 60495FA5
-P 3200 1350
-F 0 "R4" H 3150 1400 50  0000 R CNN
-F 1 "3k3" H 3150 1300 50  0000 R CNN
-F 2 "stdpads:R_0603" H 3200 1350 50  0001 C CNN
-F 3 "~" H 3200 1350 50  0001 C CNN
-	1    3200 1350
+P 2300 1900
+F 0 "R4" H 2250 1950 50  0000 R CNN
+F 1 "1k" H 2250 1850 50  0000 R CNN
+F 2 "stdpads:R_0603" H 2300 1900 50  0001 C CNN
+F 3 "~" H 2300 1900 50  0001 C CNN
+	1    2300 1900
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
@@ -688,12 +688,9 @@ F 4 "C8062" H 3500 1350 50  0001 C CNN "LCSC Part"
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	3200 1450 3500 1450
-Wire Wire Line
 	3200 1250 3500 1250
 Wire Wire Line
 	3500 1450 3800 1450
-Connection ~ 3500 1450
 $Comp
 L Device:C_Small C12
 U 1 1 6295843C
@@ -708,8 +705,6 @@ $EndComp
 Wire Wire Line
 	3800 1250 3500 1250
 Connection ~ 3500 1250
-Wire Wire Line
-	3400 950  3500 950 
 Connection ~ 2150 950 
 Wire Wire Line
 	2150 1150 1750 1150
@@ -803,28 +798,10 @@ Wire Wire Line
 	2150 950  2450 950 
 Connection ~ 1750 950 
 Connection ~ 2150 1150
-$Comp
-L Device:C_Small C11
-U 1 1 62FAED4F
-P 3500 1100
-F 0 "C11" H 3550 1150 50  0000 L CNN
-F 1 "100n" H 3550 1050 50  0000 L CNN
-F 2 "stdpads:C_0603" H 3500 1100 50  0001 C CNN
-F 3 "~" H 3500 1100 50  0001 C CNN
-	1    3500 1100
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3500 1000 3500 950 
-Connection ~ 3500 950 
-Wire Wire Line
-	3500 1200 3500 1250
 Wire Wire Line
 	4250 950  4250 1650
 Wire Wire Line
 	4250 1650 2600 1650
-Wire Wire Line
-	3500 950  4250 950 
 Wire Wire Line
 	2650 950  2800 950 
 Wire Wire Line
@@ -1070,50 +1047,38 @@ Wire Notes Line
 	1100 7150 1100 7850
 Wire Notes Line
 	1100 7150 6150 7150
-Connection ~ 2950 7600
-Connection ~ 2950 7400
 $Comp
 L Device:C_Small C20
 U 1 1 634290FE
-P 2950 7500
-F 0 "C20" H 3000 7550 50  0000 L CNN
-F 1 "2u2" H 3000 7450 50  0000 L CNN
-F 2 "stdpads:C_0603" H 2950 7500 50  0001 C CNN
-F 3 "~" H 2950 7500 50  0001 C CNN
-	1    2950 7500
-	1    0    0    -1  
-$EndComp
-Connection ~ 4150 7600
-$Comp
-L Device:C_Small C23
-U 1 1 63429105
 P 4150 7500
-F 0 "C23" H 4200 7550 50  0000 L CNN
+F 0 "C20" H 4200 7550 50  0000 L CNN
 F 1 "2u2" H 4200 7450 50  0000 L CNN
 F 2 "stdpads:C_0603" H 4150 7500 50  0001 C CNN
 F 3 "~" H 4150 7500 50  0001 C CNN
 	1    4150 7500
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2550 7600 2950 7600
-Wire Wire Line
-	2150 7600 2550 7600
-Connection ~ 2550 7600
-Wire Wire Line
-	2550 7400 2950 7400
-Wire Wire Line
-	2150 7400 2550 7400
-Connection ~ 2550 7400
+Connection ~ 4150 7600
+$Comp
+L Device:C_Small C23
+U 1 1 63429105
+P 5350 7500
+F 0 "C23" H 5400 7550 50  0000 L CNN
+F 1 "2u2" H 5400 7450 50  0000 L CNN
+F 2 "stdpads:C_0603" H 5350 7500 50  0001 C CNN
+F 3 "~" H 5350 7500 50  0001 C CNN
+	1    5350 7500
+	1    0    0    -1  
+$EndComp
 $Comp
 L Device:C_Small C19
 U 1 1 63429111
-P 2550 7500
-F 0 "C19" H 2600 7550 50  0000 L CNN
-F 1 "2u2" H 2600 7450 50  0000 L CNN
-F 2 "stdpads:C_0603" H 2550 7500 50  0001 C CNN
-F 3 "~" H 2550 7500 50  0001 C CNN
-	1    2550 7500
+P 3750 7500
+F 0 "C19" H 3800 7550 50  0000 L CNN
+F 1 "2u2" H 3800 7450 50  0000 L CNN
+F 2 "stdpads:C_0603" H 3750 7500 50  0001 C CNN
+F 3 "~" H 3750 7500 50  0001 C CNN
+	1    3750 7500
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -1125,12 +1090,12 @@ Connection ~ 3750 7400
 $Comp
 L Device:C_Small C22
 U 1 1 6342911B
-P 3750 7500
-F 0 "C22" H 3800 7550 50  0000 L CNN
-F 1 "2u2" H 3800 7450 50  0000 L CNN
-F 2 "stdpads:C_0603" H 3750 7500 50  0001 C CNN
-F 3 "~" H 3750 7500 50  0001 C CNN
-	1    3750 7500
+P 4950 7500
+F 0 "C22" H 5000 7550 50  0000 L CNN
+F 1 "2u2" H 5000 7450 50  0000 L CNN
+F 2 "stdpads:C_0603" H 4950 7500 50  0001 C CNN
+F 3 "~" H 4950 7500 50  0001 C CNN
+	1    4950 7500
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1147,99 +1112,47 @@ $EndComp
 $Comp
 L Device:C_Small C18
 U 1 1 63429128
-P 2150 7500
-F 0 "C18" H 2200 7550 50  0000 L CNN
-F 1 "2u2" H 2200 7450 50  0000 L CNN
-F 2 "stdpads:C_0603" H 2150 7500 50  0001 C CNN
-F 3 "~" H 2150 7500 50  0001 C CNN
-	1    2150 7500
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3350 7600 3750 7600
-Wire Wire Line
-	2950 7600 3350 7600
-Connection ~ 3350 7600
-Wire Wire Line
-	3350 7400 3750 7400
-Wire Wire Line
-	2950 7400 3350 7400
-Connection ~ 3350 7400
-$Comp
-L Device:C_Small C21
-U 1 1 63429134
 P 3350 7500
-F 0 "C21" H 3400 7550 50  0000 L CNN
+F 0 "C18" H 3400 7550 50  0000 L CNN
 F 1 "2u2" H 3400 7450 50  0000 L CNN
 F 2 "stdpads:C_0603" H 3350 7500 50  0001 C CNN
 F 3 "~" H 3350 7500 50  0001 C CNN
 	1    3350 7500
 	1    0    0    -1  
 $EndComp
-Connection ~ 4550 7600
+Wire Wire Line
+	3350 7600 3750 7600
+Connection ~ 3350 7600
+Wire Wire Line
+	3350 7400 3750 7400
+Connection ~ 3350 7400
 $Comp
-L Device:C_Small C24
-U 1 1 6350ED70
+L Device:C_Small C21
+U 1 1 63429134
 P 4550 7500
-F 0 "C24" H 4600 7550 50  0000 L CNN
+F 0 "C21" H 4600 7550 50  0000 L CNN
 F 1 "2u2" H 4600 7450 50  0000 L CNN
 F 2 "stdpads:C_0603" H 4550 7500 50  0001 C CNN
 F 3 "~" H 4550 7500 50  0001 C CNN
 	1    4550 7500
 	1    0    0    -1  
 $EndComp
+Connection ~ 4550 7600
+$Comp
+L Device:C_Small C24
+U 1 1 6350ED70
+P 5750 7500
+F 0 "C24" H 5800 7550 50  0000 L CNN
+F 1 "2u2" H 5800 7450 50  0000 L CNN
+F 2 "stdpads:C_0603" H 5750 7500 50  0001 C CNN
+F 3 "~" H 5750 7500 50  0001 C CNN
+	1    5750 7500
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
 	4150 7600 4550 7600
 Wire Wire Line
 	4150 7400 4550 7400
-Connection ~ 4950 7600
-$Comp
-L Device:C_Small C25
-U 1 1 6351D744
-P 4950 7500
-F 0 "C25" H 5000 7550 50  0000 L CNN
-F 1 "2u2" H 5000 7450 50  0000 L CNN
-F 2 "stdpads:C_0603" H 4950 7500 50  0001 C CNN
-F 3 "~" H 4950 7500 50  0001 C CNN
-	1    4950 7500
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4550 7600 4950 7600
-Wire Wire Line
-	4550 7400 4950 7400
-$Comp
-L Device:CP_Small C2
-U 1 1 63C0F851
-P 1750 7500
-F 0 "C2" H 1838 7546 50  0000 L CNN
-F 1 "470u" H 1838 7455 50  0000 L CNN
-F 2 "stdpads:CP_Elec_10mm" H 1750 7500 50  0001 C CNN
-F 3 "~" H 1750 7500 50  0001 C CNN
-	1    1750 7500
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:CP_Small C1
-U 1 1 63C2E080
-P 1350 7500
-F 0 "C1" H 1438 7546 50  0000 L CNN
-F 1 "470u" H 1438 7455 50  0000 L CNN
-F 2 "stdpads:CP_Elec_10mm" H 1350 7500 50  0001 C CNN
-F 3 "~" H 1350 7500 50  0001 C CNN
-	1    1350 7500
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2150 7600 1750 7600
-Connection ~ 2150 7600
-Connection ~ 1750 7600
-Wire Wire Line
-	1750 7600 1350 7600
-Connection ~ 2150 7400
-Connection ~ 1750 7400
-Wire Wire Line
-	1750 7400 2150 7400
 Connection ~ 4150 7400
 Connection ~ 4550 7400
 $Comp
@@ -1253,22 +1166,6 @@ F 3 "" H 1350 7400 50  0001 C CNN
 	1    1350 7400
 	1    0    0    -1  
 $EndComp
-Connection ~ 5350 7600
-$Comp
-L Device:C_Small C26
-U 1 1 63DD239B
-P 5350 7500
-F 0 "C26" H 5400 7550 50  0000 L CNN
-F 1 "2u2" H 5400 7450 50  0000 L CNN
-F 2 "stdpads:C_0603" H 5350 7500 50  0001 C CNN
-F 3 "~" H 5350 7500 50  0001 C CNN
-	1    5350 7500
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4950 7600 5350 7600
-Wire Wire Line
-	4950 7400 5350 7400
 $Comp
 L power:GND #PWR0123
 U 1 1 63DE262C
@@ -1280,24 +1177,6 @@ F 3 "" H 5750 7600 50  0001 C CNN
 	1    5750 7600
 	-1   0    0    -1  
 $EndComp
-Connection ~ 5750 7600
-$Comp
-L Device:C_Small C27
-U 1 1 63DE2633
-P 5750 7500
-F 0 "C27" H 5800 7550 50  0000 L CNN
-F 1 "2u2" H 5800 7450 50  0000 L CNN
-F 2 "stdpads:C_0603" H 5750 7500 50  0001 C CNN
-F 3 "~" H 5750 7500 50  0001 C CNN
-	1    5750 7500
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5350 7600 5750 7600
-Wire Wire Line
-	5350 7400 5750 7400
-Connection ~ 5350 7400
-Connection ~ 4950 7400
 $Comp
 L 74xGxx:74LVC1G14 U4
 U 1 1 607ABB09
@@ -1613,35 +1492,19 @@ F 4 "C480267" H 1400 4850 50  0001 C CNN "LCSC Part"
 	1    1400 4850
 	-1   0    0    -1  
 $EndComp
-$Comp
-L Switch:SW_Push SW2
-U 1 1 6210BC8E
-P 1400 5200
-F 0 "SW2" H 1400 5100 50  0000 C BNN
-F 1 "SW_Push" H 1400 5050 50  0000 C CNN
-F 2 "stdpads:XKB_TS-1187A" H 1400 5400 50  0001 C CNN
-F 3 "~" H 1400 5400 50  0001 C CNN
-F 4 "C480267" H 1400 5200 50  0001 C CNN "LCSC Part"
-	1    1400 5200
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	1200 5200 1200 4850
 Wire Wire Line
 	1600 4850 1700 4850
-Wire Wire Line
-	2000 4750 2000 5200
 Wire Wire Line
 	1700 4750 1700 4850
 $Comp
 L power:+3V3 #PWR0129
 U 1 1 621C26D4
-P 2000 4550
-F 0 "#PWR0129" H 2000 4400 50  0001 C CNN
-F 1 "+3V3" H 2000 4700 50  0000 C CNN
-F 2 "" H 2000 4550 50  0001 C CNN
-F 3 "" H 2000 4550 50  0001 C CNN
-	1    2000 4550
+P 1700 4550
+F 0 "#PWR0129" H 1700 4400 50  0001 C CNN
+F 1 "+3V3" H 1700 4700 50  0000 C CNN
+F 2 "" H 1700 4550 50  0001 C CNN
+F 3 "" H 1700 4550 50  0001 C CNN
+	1    1700 4550
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
@@ -1649,9 +1512,6 @@ Wire Wire Line
 Connection ~ 1700 4850
 Text Label 2350 4850 2    50   ~ 0
 BTN0
-Text Label 2350 5200 2    50   ~ 0
-BTN1
-Connection ~ 1200 4850
 Wire Wire Line
 	1200 4850 1200 4550
 Wire Wire Line
@@ -1754,8 +1614,6 @@ Wire Notes Line
 	1100 4050 2450 4050
 Text Notes 1650 4250 0    50   ~ 0
 Buttons
-Wire Wire Line
-	1700 4550 2000 4550
 $Comp
 L Device:R_Small R17
 U 1 1 610AE256
@@ -1767,23 +1625,6 @@ F 3 "~" H 1700 4650 50  0001 C CNN
 	1    1700 4650
 	1    0    0    -1  
 $EndComp
-Connection ~ 2000 5200
-Wire Wire Line
-	2000 5200 2350 5200
-Wire Wire Line
-	1600 5200 2000 5200
-$Comp
-L Device:R_Small R18
-U 1 1 610CA2D1
-P 2000 4650
-F 0 "R18" H 2050 4700 50  0000 L CNN
-F 1 "1k" H 2050 4600 50  0000 L CNN
-F 2 "stdpads:R_0603" H 2000 4650 50  0001 C CNN
-F 3 "~" H 2000 4650 50  0001 C CNN
-	1    2000 4650
-	1    0    0    -1  
-$EndComp
-Connection ~ 2000 4550
 Text Label 3900 4400 3    50   ~ 0
 ~BCK~
 $Comp
@@ -2234,10 +2075,10 @@ F 3 "~" H 1850 5900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0134
 U 1 1 601DCB46
 P 900 1150
-F 0 "#PWR?" H 900 900 50  0001 C CNN
+F 0 "#PWR0134" H 900 900 50  0001 C CNN
 F 1 "GND" H 900 1000 50  0000 C CNN
 F 2 "" H 900 1150 50  0001 C CNN
 F 3 "" H 900 1150 50  0001 C CNN
@@ -2257,14 +2098,137 @@ Wire Wire Line
 Wire Wire Line
 	2150 6000 2250 5950
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0135
 U 1 1 602195C0
 P 2250 5950
-F 0 "#PWR?" H 2250 5700 50  0001 C CNN
+F 0 "#PWR0135" H 2250 5700 50  0001 C CNN
 F 1 "GND" H 2250 5800 50  0000 C CNN
 F 2 "" H 2250 5950 50  0001 C CNN
 F 3 "" H 2250 5950 50  0001 C CNN
 	1    2250 5950
 	-1   0    0    -1  
+$EndComp
+Text Label 9450 2900 0    50   ~ 0
+BTN0
+NoConn ~ 9450 3400
+NoConn ~ 9450 3500
+Text Label 9450 3100 0    50   ~ 0
+BLED
+Text Label 9450 3200 0    50   ~ 0
+GLED
+Text Label 9450 3300 0    50   ~ 0
+RLED
+Text Label 6400 3600 2    50   ~ 0
+ADBsync
+Text Label 6400 3700 2    50   ~ 0
+BCK
+Text Label 6400 3800 2    50   ~ 0
+ADBin
+Text Label 6400 3900 2    50   ~ 0
+ADBout
+Text Label 6400 4000 2    50   ~ 0
+PSWout
+NoConn ~ 6650 3800
+Wire Wire Line
+	3400 950  4250 950 
+Wire Wire Line
+	2300 1650 2300 1800
+$Comp
+L Device:C_Small C2
+U 1 1 6025CBD6
+P 1750 7500
+F 0 "C2" H 1800 7550 50  0000 L CNN
+F 1 "100u" H 1800 7450 50  0000 L CNN
+F 2 "stdpads:C_1210" H 1750 7500 50  0001 C CNN
+F 3 "~" H 1750 7500 50  0001 C CNN
+	1    1750 7500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C11
+U 1 1 6025CF77
+P 2150 7500
+F 0 "C11" H 2200 7550 50  0000 L CNN
+F 1 "100u" H 2200 7450 50  0000 L CNN
+F 2 "stdpads:C_1210" H 2150 7500 50  0001 C CNN
+F 3 "~" H 2150 7500 50  0001 C CNN
+	1    2150 7500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4550 7600 4950 7600
+Wire Wire Line
+	4550 7400 4950 7400
+Connection ~ 4950 7400
+Wire Wire Line
+	4950 7400 5350 7400
+Connection ~ 4950 7600
+Wire Wire Line
+	4950 7600 5350 7600
+Connection ~ 5350 7400
+Wire Wire Line
+	5350 7400 5750 7400
+Connection ~ 5350 7600
+Wire Wire Line
+	5350 7600 5750 7600
+Connection ~ 5750 7600
+Wire Wire Line
+	1350 7600 1750 7600
+Connection ~ 1750 7400
+Connection ~ 1750 7600
+Connection ~ 2150 7400
+Wire Wire Line
+	2150 7400 2550 7400
+Connection ~ 2150 7600
+Wire Wire Line
+	2150 7600 2550 7600
+Wire Wire Line
+	1750 7400 2150 7400
+Wire Wire Line
+	1750 7600 2150 7600
+$Comp
+L Device:C_Small C25
+U 1 1 602ABEE1
+P 2550 7500
+F 0 "C25" H 2600 7550 50  0000 L CNN
+F 1 "100u" H 2600 7450 50  0000 L CNN
+F 2 "stdpads:C_1210" H 2550 7500 50  0001 C CNN
+F 3 "~" H 2550 7500 50  0001 C CNN
+	1    2550 7500
+	1    0    0    -1  
+$EndComp
+Connection ~ 2550 7400
+Connection ~ 2550 7600
+Wire Wire Line
+	2550 7400 2950 7400
+Wire Wire Line
+	2550 7600 2950 7600
+$Comp
+L Device:C_Small C26
+U 1 1 602C9E0E
+P 2950 7500
+F 0 "C26" H 3000 7550 50  0000 L CNN
+F 1 "100u" H 3000 7450 50  0000 L CNN
+F 2 "stdpads:C_1210" H 2950 7500 50  0001 C CNN
+F 3 "~" H 2950 7500 50  0001 C CNN
+	1    2950 7500
+	1    0    0    -1  
+$EndComp
+Connection ~ 2950 7400
+Wire Wire Line
+	2950 7400 3350 7400
+Connection ~ 2950 7600
+Wire Wire Line
+	2950 7600 3350 7600
+$Comp
+L Device:C_Small C1
+U 1 1 602CA390
+P 1350 7500
+F 0 "C1" H 1400 7550 50  0000 L CNN
+F 1 "100u" H 1400 7450 50  0000 L CNN
+F 2 "stdpads:C_1210" H 1350 7500 50  0001 C CNN
+F 3 "~" H 1350 7500 50  0001 C CNN
+	1    1350 7500
+	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
