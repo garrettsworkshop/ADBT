@@ -1416,7 +1416,7 @@ F 3 "~" H 1700 4650 50  0001 C CNN
 	1    1700 4650
 	1    0    0    -1  
 $EndComp
-Text Notes 3250 5000 0    50   ~ 0
+Text Notes 3150 5000 0    50   ~ 0
 ADB output driver
 $Comp
 L power:GND #PWR0130
@@ -1668,7 +1668,7 @@ F 2 "stdpads:Crystal_SMD_3225-4Pin_3.2x2.5mm" H 3450 3050 50  0001 C CNN
 F 3 "~" H 3450 3050 50  0001 C CNN
 F 4 "C9002" H 3450 3050 50  0001 C CNN "LCSC Part"
 	1    3450 3050
-	0    -1   1    0   
+	0    -1   -1   0   
 $EndComp
 Connection ~ 3450 2950
 Wire Wire Line
@@ -1862,11 +1862,11 @@ Text Label 9450 3200 0    50   ~ 0
 GLED
 Text Label 9450 3300 0    50   ~ 0
 RLED
-Text Label 6400 3800 2    50   ~ 0
+Text Label 6150 3350 2    50   ~ 0
 ADBin
-Text Label 6400 3900 2    50   ~ 0
+Text Label 6150 3450 2    50   ~ 0
 ADBout
-Text Label 6400 4000 2    50   ~ 0
+Text Label 6150 3550 2    50   ~ 0
 PSWout
 Wire Wire Line
 	3400 950  4250 950 
